@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/style.css';
 import {connect } from 'react-redux';
-import {BrowserRouter,Route} from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+//Components
+import Menu from './Components/Header/Menu';
+import Logo from './Components/Header/Logo';
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <Route path="/test" render={<h1>HOLA TEST</h1>} />
-        <p className="App-intro">
-        <h4>Redux Test</h4>
-          <div><button onClick={this.props.onIncrementCounter}>Increment</button><button onClick={this.props.onDecrementCounter}>onDecrementCounter</button></div>
-          <div>{this.props.ctr}</div>
-        </p>
+      <header>
+        <Logo />
+        <Menu />
+      </header>
+       <Switch>
+          <Route path="/deck" exact render={()=><h1>CARDS</h1>} />
+          <Route path="/play" exact render={()=><h1>PLAY</h1>} />
+          <Route path="/" exact render={()=><h1>MAIN</h1>} />
+         </Switch>
+       
       </div>
+      </ BrowserRouter>
     );
   }
 }
@@ -33,4 +37,4 @@ const mapDispatchToProps = dispatch =>{
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(withRouter(App));
+export default connect(mapStateToProps,mapDispatchToProps)(App);

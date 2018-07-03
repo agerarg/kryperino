@@ -1,0 +1,53 @@
+html {
+  font-size: 10px; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F7C655;
+  box-sizing: border-box;
+  padding: 2rem;
+  font-weight: 400;
+  font-family: 'Alegreya SC', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #E8A275;
+  border: 2rem solid;
+  border-color: #87011D;
+  height: 100vh; }
+
+.logo {
+  font-size: 6rem; }
+
+.nav a, .nav a:active {
+  font-weight: 800;
+  color: #E15E14;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3rem;
+  width: 15rem;
+  background-color: #87011D;
+  border-radius: 100px;
+  border: 1px solid #220007;
+  animation-duration: 0.3s;
+  box-shadow: 0 0.1rem black;
+  transform: translateY(-0.1rem); }
+  .nav a:hover, .nav a:active:hover {
+    color: #f29b69;
+    background-color: #540112;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.3rem black; }
+  .nav a:active, .nav a:active:active {
+    transform: translateY(-0.1rem); }
+
+.nav .active {
+  background-color: #540112;
+  transform: translateY(0); }
