@@ -6,7 +6,7 @@ $linksBackground: #87011D;
 $siteColor: #E8A275;
 
 html{
-    font-size: 10px;
+    font-size: 1vh;
 }
 *,
 *::after,
@@ -64,3 +64,26 @@ body {
             transform: translateY(0);
           } 
     }
+
+
+    .cardImg {
+      width: 17rem;
+      height: 24rem;
+      display: inline-block;
+      &:hover{
+        transform: translateY(-0.3rem);
+        cursor: pointer;
+    }
+
+    } 
+    .Card {
+        width: 100%;
+        height: 100%;
+       background-size: contain;
+    }
+
+    .BoardGame {
+        display: flex;
+        justify-content: center;
+        background-color: DodgerBlue;
+      }

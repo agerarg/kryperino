@@ -5,6 +5,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 //Components
 import Menu from './Components/Header/Menu';
 import Logo from './Components/Header/Logo';
+import Board from './Components/Board/Board';
 class App extends Component {
   render() {
     return (
@@ -16,7 +17,7 @@ class App extends Component {
       </header>
        <Switch>
           <Route path="/deck" exact render={()=><h1>CARDS</h1>} />
-          <Route path="/play" exact render={()=><h1>PLAY</h1>} />
+          <Route path="/play" exact component={Board} />
           <Route path="/" exact render={()=><h1>MAIN</h1>} />
          </Switch>
        
