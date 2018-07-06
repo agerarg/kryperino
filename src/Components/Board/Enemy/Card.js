@@ -11,7 +11,7 @@ const card = (props)=>{
               };
       
 
-        return (<div className="cardImg"><div class="Card" style={style} ></div></div>)
+        return (<div className="cardImg"><div className="Card" style={style} ></div></div>)
 
 }
 export default card;

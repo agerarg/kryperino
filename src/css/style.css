@@ -53,19 +53,31 @@ body {
   transform: translateY(0); }
 
 .cardImg {
-  width: 17rem;
-  height: 24rem;
+  width: 9%;
+  height: 100%;
+  background-color: #E15E14;
+  border: 1px black solid;
   display: inline-block; }
   .cardImg:hover {
     transform: translateY(-0.3rem);
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #ee7b3a; }
 
 .Card {
   width: 100%;
   height: 100%;
-  background-size: contain; }
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .BoardGame {
   display: flex;
-  justify-content: center;
-  background-color: DodgerBlue; }
+  justify-content: center; }
+
+.enemyCards {
+  width: 80vw;
+  height: 10vw;
+  margin-bottom: 2vh; }
+
+.allyCards {
+  width: 80vw;
+  height: 10vw; }

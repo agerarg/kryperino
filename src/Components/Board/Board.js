@@ -10,11 +10,17 @@ class Board extends Component {
         <div className="BoardGame">
              <div className="LeftBoard">Left</div>
             <div className="CenterBoard">
+                <div className="enemyHead">
+                ENEMY HEAD
+                </div>
                 <div className="enemyCards">
                     <Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" />
                 </div>
-                <div className="AllyCards">
+                <div className="allyCards">
                     <Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" /><Card id="1" />
+                </div>
+                <div className="allyHead">
+                ALLY HEAD
                 </div>
             </div>
             <div className="RightBoard">Right</div>

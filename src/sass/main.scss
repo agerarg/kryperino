@@ -4,6 +4,7 @@ $linksColors: #E15E14;
 $linksBackground: #87011D;
 //BackgroundCOlor
 $siteColor: #E8A275;
+$CardBackColor: #E15E14;
 
 html{
     font-size: 1vh;
@@ -67,12 +68,15 @@ body {
 
 
     .cardImg {
-      width: 17rem;
-      height: 24rem;
+      width: 9%; 
+      height: 100%;
+      background-color: $CardBackColor;
+      border: 1px black solid;
       display: inline-block;
       &:hover{
         transform: translateY(-0.3rem);
         cursor: pointer;
+        background-color: lighten($CardBackColor,10%); 
     }
 
     } 
@@ -80,10 +84,20 @@ body {
         width: 100%;
         height: 100%;
        background-size: contain;
+       background-repeat: no-repeat;
     }
 
     .BoardGame {
         display: flex;
         justify-content: center;
-        background-color: DodgerBlue;
       }
+    
+    .enemyCards{
+        width: 80vw; 
+        height: 10vw; 
+        margin-bottom: 2vh;
+    }
+    .allyCards{
+        width: 80vw; 
+        height: 10vw;
+    }
